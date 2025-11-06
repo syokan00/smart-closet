@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Smart Closet",
+    "slug": "smart-closet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartcloset.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos of your outfits.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to select outfit photos.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.smartcloset.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Smart Closet to access your camera."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Smart Closet to access your photos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2f197746-72a3-4173-8d28-9763f8ac9d3d"
+      }
+    }
+  }
+}

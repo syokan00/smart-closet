@@ -1,0 +1,24 @@
+
+
+export const API_CONFIG = {
+
+  
+  // Google Cloud Vision API
+  GOOGLE_VISION_API_KEY: 'YOUR_GOOGLE_VISION_API_KEY',
+};
+
+/**
+ * 检查API配置是否完整
+ */
+export function checkAPIConfig(): {
+  googleVisionConfigured: boolean;
+} {
+  return {
+  
+    
+    googleVisionConfigured:
+      API_CONFIG.GOOGLE_VISION_API_KEY !== 'YOUR_GOOGLE_CLOUD_VISION_API_KEY' &&
+      API_CONFIG.GOOGLE_VISION_API_KEY.length > 0,
+   
+  };
+}
