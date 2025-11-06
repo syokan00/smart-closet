@@ -86,7 +86,8 @@ React Native + Expoで開発したクロスプラットフォーム（iOS/Androi
 
 #### 1. リポジトリをクローン
 
-git clone https://github.com/yourusername/smart-closet.git
+git clone https://github.com/syokan00/smart-closet.git
+
 cd smart-closet
 
 #### 2. 依存関係をインストール
